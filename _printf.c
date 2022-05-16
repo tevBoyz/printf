@@ -57,7 +57,7 @@ for (; format[i] != '%' && format[i]; i++)
 _putchar(format[i]);
 count++;
 }
-				
+
 if (!format[i])
 return (count);
 f = check_for_specifiers(&format[i + 1]);
