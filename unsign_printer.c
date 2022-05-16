@@ -1,4 +1,5 @@
 #include "main.h"
+#include <limits.h>
 
 /**
  * print_u - prints an unsigned in in decimal notation
@@ -77,7 +78,7 @@ unsigned int a[32];
 int count;
 
 n = va_arg(b, unsigned int);
-m = 2147483648; /* (2 ^ 31) */
+m = INT_MAX; /* (2 ^ 31) */
 a[0] = n / m;
 for (i = 1; i < 32; i++)
 {
